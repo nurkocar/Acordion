@@ -1,0 +1,16 @@
+.iconContainer {
+    width: 20%;
+    border: 2px solid red;
+}
+
+.icon {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .iconContainer{
+        width: 50%;
+        margin-top: 5%;
+    }
+}
+
