@@ -1,0 +1,26 @@
+.buttonContainer {
+    margin: 3.46875rem;
+}
+
+.button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Source Sans Pro';
+    padding: 11.5px 49px 9.5px; 
+    color: white;
+    background-image: linear-gradient(270deg, #A901A2 0%, #FC60DB 100%);
+    border-radius: 1.75rem;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover{
+    background-image: linear-gradient(270deg, #000 0%, #000 100%);
+}
+
+@media only screen and (max-width: 768px) {
+    .button{
+        font-size: 1rem;
+        padding: 8px 30px 6px; 
+    }
+}
