@@ -1,0 +1,35 @@
+.panelTitle {
+    cursor: pointer;
+    color: #191B22;
+    background-color: #F4F4F4;
+    padding: 14px 23px;
+    font-weight: bold;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: space-between;
+}
+.panelCollapse {
+    border: 2px solid #F4F4F4;
+    /* transition: all .3s ease-in; */
+    background-color: #FFF;
+    display: none;  
+}
+.panelBody {
+    border: none !important;
+    font-size: 1rem;
+    color: #707070;
+    padding: 28.5px 41px 24.5px 30px;
+}
+.open{
+    display: block;
+}
+
+.accordionIcon {
+    margin-left: auto;
+    transition: transform 0.5s ease;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
