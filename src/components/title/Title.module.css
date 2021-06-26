@@ -3,3 +3,10 @@
     font-weight: 900;
     color: #191B22;
 }
+
+@media only screen and (max-width: 768px) {
+    .titleContainer{
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+}
