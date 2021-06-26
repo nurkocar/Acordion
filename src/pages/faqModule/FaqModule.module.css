@@ -1,0 +1,20 @@
+.acordionAndIconContainer {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.iconLeft {
+    flex-direction: row-reverse;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .acordionAndIconContainer{
+        flex-direction: column;
+    }
+}
+
+
