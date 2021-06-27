@@ -8,7 +8,7 @@ export const PanelItem = ({ data, clickHandler, isExpanded }) => {
     const { title, text } = data;
 
     return (
-        <div>
+        <div className={styles.panelContainer}>
             <div className={styles.panelTitle} onClick={clickHandler} >
                 <span>{title}</span>
                 <ArrowIcon className={`${styles.accordionIcon} ${isExpanded ? styles.rotate : ''}`} width={10} fill={"#82009E"} />

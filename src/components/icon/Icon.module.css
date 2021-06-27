@@ -1,15 +1,45 @@
 .iconContainer {
     width: 20%;
+    overflow:hidden
 }
 
-.icon {
+/* .icon {
     width: 100%;
-}
 
-@media only screen and (max-width: 768px) {
-    .iconContainer{
-        width: 50%;
-        margin-top: 5%;
+} */
+.icon {
+    /* width: 100%; */
+    animation-duration: .5s;
+    animation-name: slidefromright;
+  }
+  
+@keyframes slidefromright {
+    from {
+      margin-left: 100%;
+      width: 300%;
     }
-}
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .iconLeft {
+    /* width: 100%; */
+    animation-duration: .5s;
+    animation-name: slidefromleft;
+  }
+  
+@keyframes slidefromleft {
+    from {
+      margin-left: 0%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 100%;
+      width: 150%;
+    }
+  }
 

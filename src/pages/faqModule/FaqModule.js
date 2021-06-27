@@ -19,7 +19,7 @@ export const FaqModule = ({ data, iconPosition }) => {
                     <Subtitle subtitle={item.text} />
                     <div className={`${styles.acordionAndIconContainer} ${iconPosition === 'left' ? styles.iconLeft : ''}`} >
                         <Acordion setIcon={setIcon} />
-                        <Icon icon={icon} />
+                        <Icon iconPosition={iconPosition} icon={icon} />
                     </div>
                     <Button title={item.buttonText} />
                 </div>
