@@ -23,4 +23,7 @@
         font-size: 1rem;
         padding: 8px 30px 6px; 
     }
+    .buttonContainer {
+        margin: 1.5rem;
+    }
 }

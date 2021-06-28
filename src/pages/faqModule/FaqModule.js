@@ -5,11 +5,12 @@ import { Acordion } from "../../components/acordion";
 import { Icon } from '../../components/icon';
 import { Button } from "../../components/button";
 
+
 import styles from './FaqModule.module.css';
 
 export const FaqModule = ({ data, iconPosition }) => {
 
-    const [icon, setIcon] = useState('customer');
+    const [selectedItem, setSelectedItem] = useState(0);
 
     return (
         <div>
@@ -18,8 +19,8 @@ export const FaqModule = ({ data, iconPosition }) => {
                     <Title title={item.title} />
                     <Subtitle subtitle={item.text} />
                     <div className={`${styles.acordionAndIconContainer} ${iconPosition === 'left' ? styles.iconLeft : ''}`} >
-                        <Acordion setIcon={setIcon} />
-                        <Icon iconPosition={iconPosition} icon={icon} />
+                        <Acordion selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
+                        <Icon iconPosition={iconPosition} iconIndex={selectedItem} />
                     </div>
                     <Button title={item.buttonText} />
                 </div>

@@ -6,16 +6,17 @@ import { ReactComponent as WorldIcon } from '../../assets/svgs/world.svg';
 
 import styles from './Icon.module.css';
 
-export const Icon = ({ icon, iconPosition }) => {
+export const Icon = ({ iconIndex, iconPosition }) => {
     const position = iconPosition === 'right' ? styles.icon : styles.iconLeft;
+    const icons = ['customer', 'learning', 'security', 'storage', 'time', 'world']
     return (
         <section className={styles.iconContainer}>
-            {icon === 'customer' && <CustomerIcon className={position} />}
-            {icon === 'learning' && <LearningIcon className={position} />}
-            {icon === 'security' && <SecurityIcon className={position} />}
-            {icon === 'storage' && <WorldIcon className={position} />}
-            {icon === 'time' && <TimeIcon className={position} />}
-            {icon === 'world' && <WorldIcon className={position} />}
+            {icons[iconIndex] === 'customer' && <CustomerIcon className={position} />}
+            {icons[iconIndex] === 'learning' && <LearningIcon className={position} />}
+            {icons[iconIndex] === 'security' && <SecurityIcon className={position} />}
+            {icons[iconIndex] === 'storage' && <WorldIcon className={position} />}
+            {icons[iconIndex] === 'time' && <TimeIcon className={position} />}
+            {icons[iconIndex] === 'world' && <WorldIcon className={position} />}
         </section>
     )
 };
