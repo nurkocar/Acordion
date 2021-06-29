@@ -5,9 +5,6 @@
     width: 60%;
 }
 
-.acordionContainer:focus {
-    outline: 0;
-}
 
 @media only screen and (max-width: 768px) {
     .acordionContainer{
