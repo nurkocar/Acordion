@@ -1,3 +1,7 @@
+.panelContainer:focus {
+    outline: 0;
+}
+
 .panelTitle {
     cursor: pointer;
     color: #191B22;
@@ -32,7 +36,7 @@
 }
 
 @keyframes slide-down {
-    0% { opacity: 0; -webkit-transform: translateY(-10%); }   
+    0% { opacity: 0; -webkit-transform: translateY(-10%); }    
   100% { opacity: 1; -webkit-transform: translateY(0); }
 }
 
