@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { acordionData } from "../../data/acordionData";
 import { PanelItem } from '../panelItem';
 import styles from './Acordion.module.css';
@@ -6,7 +5,6 @@ import styles from './Acordion.module.css';
 
 export const Acordion = ({ selectedItem, setSelectedItem }) => {
 
-    const ref = useRef(null);
 
     const clickHandler = (index) => {
         setSelectedItem(index);
@@ -23,12 +21,12 @@ export const Acordion = ({ selectedItem, setSelectedItem }) => {
         }
     }
 
-    useEffect(() => {
-        ref.current?.focus();
-    }, []);
 
     return (
-        <section tabIndex='0' className={styles.acordionContainer} onKeyDown={handleKeyPress} ref={ref}>
+        <section
+            className={styles.acordionContainer}
+            onKeyDown={handleKeyPress}
+        >
             {acordionData.map((item, index) => (
                 <PanelItem
                     key={index}
